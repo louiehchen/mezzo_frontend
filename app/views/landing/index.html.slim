@@ -1,2 +1,92 @@
-.main-div
-	h1 hello world!
+header
+  nav
+    .row
+      =image_tag "logobrain", class: "logo", alt: "Mezzomorphic Logo"
+      ul.main-nav
+        li: a href="#" register
+        li: a href="#" login
+        li: a href="#" channels
+        li: a href="#" home
+
+  .dock-text-box
+    h1 
+      | Mezzomorphic
+      br 
+      h3 
+        | Where Deep Learning
+        br 
+        | becomes deep listening.
+    a.btn.btn-ghost href="#" First Sounds
+    a.btn.btn-ghost href="#" Contact Us
+
+section.section-features
+  .row
+    h2 Project Goals &mdash; The Sound
+    p.long-copy
+      | Hello fellow deep learning enthusiast! We are a group of 5 software engineering students who set out to make computer generarted sound!
+
+  .row
+    .col.span-1-of-3.box
+      i.ion-music-note.icon-big
+      h3 Song Analysis
+      p
+        | Going into this project, there was a clear idea of our network being able to analyze a song file, and the rest of our project was based entirely on this analysis.
+      
+    .col.span-1-of-3.box
+      i.ion-headphone.icon-big
+      h3 Music Generation
+      p
+        | Our next goal was having the ability to not only analyze the tracks passed into our network, but to then be able to have our network generate its own "music" based on what it was hearing.
+    .col.span-1-of-3.box
+      i.ion-share.icon-big
+      h3 File I/O
+      p
+        | Finally we aimed to have a system for users to easily pass songs into our network, and access the outputs once analysis and generation had been run.
+
+
+section.section-channels
+  ul.channel-showcase.clearfix
+    li
+      figure.channel-photo
+        =image_tag "jazz", alt: "jazz"
+    li
+      figure.channel-photo
+        =image_tag "rap", alt: "rap"
+    li
+      figure.channel-photo
+        =image_tag "indie", alt: "indie"
+    li
+      figure.channel-photo
+        =image_tag "techno", alt: "techno"
+
+  ul.channel-showcase.clearfix
+    li
+      figure.channel-photo
+        =image_tag "country", alt: "country"
+    li
+      figure.channel-photo
+        =image_tag "house", alt: "house"
+    li
+      figure.channel-photo
+        =image_tag "aucostic", alt: "aucostic"
+    li
+      figure.channel-photo
+        =image_tag "classical", alt: "Classical"
+  
+section.section-steps
+  .row
+    h2 How it works
+  .row
+    .col.span-1-of-2.steps-box
+      =image_tag "flowchart2", class: "how-it-works"
+    .col.span-1-of-2.steps-box
+      .works-step
+        div 1
+        p Sound Files are unploaded for the neural network to be train on.
+      .works-step
+        div 2
+        p The network trains and dropout is added.
+      .works-step
+        div 3
+        p New computer generated sound.
+

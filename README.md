@@ -10,12 +10,16 @@ The Mezzomorphic front end is built using Rails 5 and contains the landing page.
 
 *If you don't already have Rails installed you can find installation instructions [here](http://guides.rubyonrails.org/getting_started.html).*
 
-
-##Usage
+##Installation
 ```
 bundle 
 rails db:create
-rails s
+```
+When you first clone, run these commands to initalize the application.
+
+##Usage
+```
+rails server
 ```
 
 #Team

@@ -1,24 +1,26 @@
-# README
+#Mezzomorphic Front End
+> Deep Learning Music Generator. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Mezzomorphic is a web application that uses Rails and Python to generate music via a recurrent neural network.
 
-Things you may want to cover:
+This is the front end and is used in conjuction with a Rails Api [controller](https://github.com/louiehchen/mezzo_backend) and Mezzomorphic's Recurrent Neural Network [neural network](https://github.com/SudoSanauu/mezzomorphicrnn).
 
-* Ruby version
 
-* System dependencies
+The Mezzomorphic front end is built using Rails 5 and contains the landing page.
 
-* Configuration
+*If you don't already have Rails installed you can find installation instructions [here](http://guides.rubyonrails.org/getting_started.html).*
 
-* Database creation
 
-* Database initialization
+##Usage
+```
+bundle 
+rails db:create
+rails s
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#Team
+* [Aaron Jacobson](https://github.com/SudoSanauu)
+* [Alex Mcleod](https://github.com/mcleodaj)
+* [Alexandria Nelson](https://github.com/Alex-CAN)
+* [Louie Chen](https://github.com/louiehchen)
+* [Vivi Nguyen](https://github.com/CatonNip)

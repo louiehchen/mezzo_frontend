@@ -1,1 +1,5 @@
-h1 this is the channel show page
+h1 = @channel["channel"]["name"]
+h1 = @channel["channel"]["description"]
+- @channel["inputs"].each do |input|
+  p = input["name"]
+  p = input["artist"]

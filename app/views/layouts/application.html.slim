@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title Mezzomorphic
+      = csrf_meta_tags
+      = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+      = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body.index#page-top
+    /Navigation
+    nav.navbar.navbar-default.navbar-custom.navbar-fixed-top#mainNav
+      /hamburger nav menu
+      .container
+        .navbar-header.page-scroll
+        /Not sure what to do with this yet maybe change it to an a tag?
+          /<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            /<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+          /</button>
+          a.navbar-brand.page-scroll href='#page-top' Mezzomorphic
+
+      /navigation links
+      .collapse.navbar-collapse#bs-example-navbar-collapse-1
+        ul.nav.navbar-nav.navbar-right
+          li.hidden
+            a href='#page-top'
+          /Feel free put in login, profile, ect.
+          
+    == yield
